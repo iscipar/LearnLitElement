@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Templates</title>
+</head>
+<body>
+    <h1>Templates en LitElement</h1>
+    <my-date timestamp="1568374829396"></my-date>
+    <br>
+    <my-input placeholder="Escribe un nombre" label="Nombre"></my-input>
+    <my-input disabled value="2019"></my-input>
+    <br>
+    <my-list etiquetas='["PHP", "JavaScript", "HTML", "CSS"]'></my-list>
+    <br>
+    <my-overlay>
+        <p>Esto es el Light DOM</p>
+        <div slot="trigger">Menú</div>
+    </my-overlay>
+    <script src="./src/index.js" type="module"></script>
+</body>
+</html>
