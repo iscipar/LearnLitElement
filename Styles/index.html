@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Styles</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', sans-serif;
+        }
+
+        my-card {
+            cursor: pointer;
+        }
+
+        .red {
+            --my-card-title-color: #fafafa;
+            --my-card-title-background-color: #b71c1c;
+        }
+
+        .bookmark {
+            --my-icon-color: #6d4c41;
+        }
+
+        .face {
+            --my-icon-color: #303f9f;
+            --my-icon-size: 36px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estilos en LitElement</h1>
+    <my-card title="Primer título">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error reprehenderit quibusdam amet est eaque laudantium, deserunt commodi dignissimos sed distinctio, at repellat itaque fuga harum numquam voluptate illo ad aliquam.</p>
+    </my-card>
+    <my-card hidden></my-card>
+    <my-card class="red">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur pariatur in sint inventore eveniet magni omnis! Soluta provident expedita, veniam ducimus quis ad, quia sit excepturi nemo voluptatum sapiente ipsa.</p>
+    </my-card>
+    <my-card title="Segundo título" class="red">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam illo ipsum harum quidem, perferendis animi quos, sapiente est dolorem repudiandae adipisci molestias officia sequi iste nemo perspiciatis? Eos, ipsa molestias!</p>
+    </my-card>
+    <my-card title="Tercer título">
+        <p>Iconos</p>
+        <my-icon></my-icon>
+        <my-icon hidden></my-icon>
+        <my-icon icon="bookmark" class="bookmark"></my-icon>
+        <my-icon icon="face" class="face"></my-icon>
+    </my-card>
+    <script src="./src/index.js" type="module"></script>
+</body>
+</html>
