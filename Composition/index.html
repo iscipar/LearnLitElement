@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Composition</title>
+</head>
+<body>
+    <h1>Composición en LitElement</h1>
+    <my-app>
+        <my-checkbox-with-label label="Primera opción" checked></my-checkbox-with-label>
+        <br>
+        <my-checkbox-with-label label="Segunda opción"></my-checkbox-with-label>
+        <br>
+        <br>
+        <my-overlay-with-position top="30">
+            <p>Esto es el Light DOM</p>
+            <div slot="trigger">Menú</div>
+        </my-overlay-with-position>
+    </my-app>
+    <script src="./src/index.js" type="module"></script>
+</body>
+</html>
