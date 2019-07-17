@@ -1,0 +1,21 @@
+{
+  "name": "rollup-app",
+  "license": "MIT",
+  "scripts": {
+    "start": "es-dev-server --app-index index.html --node-resolve --open --watch",
+    "start:compatibility": "es-dev-server --app-index index.html --compatibility all --node-resolve --open --watch",
+    "build": "rimraf dist && rollup -c rollup.config.js",
+    "start:build": "es-dev-server --app-index dist/index.html --open"
+  },
+  "dependencies": {
+    "lit-element": "^2.0.1",
+    "lit-html": "^1.0.0",
+    "polypar-flag-icon": "^1.0.0"
+  },
+  "devDependencies": {
+    "@open-wc/building-rollup": "^0.8.5",
+    "es-dev-server": "^1.6.4",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.17.0"
+  }
+}

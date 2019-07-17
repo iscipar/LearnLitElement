@@ -1,0 +1,21 @@
+{
+  "name": "webpack-app",
+  "license": "MIT",
+  "scripts": {
+    "start": "es-dev-server --app-index index.html --node-resolve --open --watch",
+    "start:compatibility": "es-dev-server --app-index index.html --compatibility all --node-resolve --open --watch",
+    "build": "webpack --mode production",
+    "start:build": "es-dev-server --app-index dist/index.html --open"
+  },
+  "dependencies": {
+    "lit-element": "^2.0.1",
+    "lit-html": "^1.0.0",
+    "polypar-flag-icon": "^1.0.0"
+  },
+  "devDependencies": {
+    "@open-wc/building-webpack": "^2.3.2",
+    "es-dev-server": "^1.6.4",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.6"
+  }
+}
