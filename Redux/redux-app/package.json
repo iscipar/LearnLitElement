@@ -1,0 +1,22 @@
+{
+  "name": "redux-app",
+  "license": "MIT",
+  "scripts": {
+    "start": "es-dev-server --app-index index.html --node-resolve --open --watch",
+    "start:compatibility": "es-dev-server --app-index index.html --compatibility all --node-resolve --open --watch",
+    "start:build": "es-dev-server --app-index dist/index.html --open",
+    "build": "rimraf dist && rollup -c rollup.config.js"
+  },
+  "dependencies": {
+    "lit-element": "^2.0.1",
+    "lit-html": "^1.0.0",
+    "pwa-helpers": "^0.9.1",
+    "redux": "^4.0.4"
+  },
+  "devDependencies": {
+    "es-dev-server": "^1.5.0",
+    "@open-wc/building-rollup": "^0.6.0",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.15.4"
+  }
+}
